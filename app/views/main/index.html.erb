@@ -1,0 +1,95 @@
+<h1>Produce Producer</h1>
+<p>Find the Producers who Produced Music for your Favorite Artists and Musicians!!!</p>
+
+
+
+
+
+
+
+<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJJ9tdt9vbxjKcYqio1uvZoHlF6RIDCLLj09eQ13SZzaIzxFcc">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_09ZGoR3I4GKfxCOxttQIuZyqOUaocuPH8XVq4eSId004emlS ">
+
+
+<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl9zmWpRvHBdf1KhyHAAkMD74R3vQYv697Qxa7RCMzGTT41zgW6w">
+
+
+
+<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSg-dP5dr_0gyUOQHGvOpZnoUyWE8BV7iof_HQ891pvfIsoDfn6Rg">
+
+
+
+<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRg_mMaKsbInNzRoVPbs9N5a_oJ29xLZRWarzha6k84vzhN-Nzq">
+
+<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3LO10BJchKSR0BgCrgLJP4g5YO6SpbjWWZUtMo2kkGfeIBUJD">
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+
+
+
+
+
+
+
+<form accept-charset="UTF-8" action="#" method="get">
+  <label for="q">Search for Producers:</label>
+  <input id="q" name="q" type="text" />
+  <input name="commit" type="button" value="Search" onclick="myFunction()" />
+</form>
+
+<div id="result">
+</div>
+
+
+
+
+
+
+<script>
+
+
+ var APIkey = "2a56662308b52733825e158f0ae6f6ad";
+ var url ='http://api.musicgraph.com/api/v1/album/search?api_key='
+ 
+
+function getAlbum() {
+      $.get('http://api.musicgraph.com/api/v1/album/search?api_key=' + APIkey + '&limit=10&artist_id=' + datum.id, function (album) {
+        produced_by = produced_by;
+        display();
+      });
+    }
+
+
+</script>
+
+
+
+
+//var x=document.getElementById("q");
+
+//function myData(data){
+	//console.log("hello");
+	//$( "#result").html(data);
+
+//}
+
+//function myFunction("q")
+//{
+	//var url ="http://api.musicgraph.com"+x.value+?apikey ="2a56662308b52733825e158f0ae6f6ad";
+
+//console.log(url);
+
+//$.ajax({
+	//type: "GET",
+	//url: url,
+	//jsonp: "jsonp_callback",
+	//dataType: "jsonp",
+	//success: myData
+	
+
+//});
